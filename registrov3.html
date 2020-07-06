@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>GameOvaRegister</title>
+	<link rel="stylesheet" href="css/propio.css">
+	<script src="https://kit.fontawesome.com/ca7fc29651.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scripts/valiadarpass.js"></script>
+	<link rel="stylesheet" href="css/tailwindCSS.css">
+	<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+	<nav class="flex justify-between items-center py-4 nav1 fadeInDown">
+        <a href="index.html" class="pl-3">
+            <img src="images/tot.png" alt="">
+        </a>
+    </nav>
+	<form class="formulario box">
+		
+		<h1>Regístrate</h1>
+		<div class="contenedor">
+			<div class="input-contenedor">
+				<i class="fas fa-user icon"></i>
+				<input type="text" minlength="8" maxlength="35" placeholder="Nombre y Apellido" required="">
+			</div>
+
+			<div class="input-contenedor">
+				<i class="fas fa-envelope icon"></i>
+				<input type="text" maxlength="26" placeholder="Correo Electrónico" required="">
+			</div>
+
+			<form action="" name="f1">
+				<div class="input-contenedor">
+					<i class="fas fa-key icon"></i>
+					<input type="password" name="clave1" minlength="5" maxlength="15" placeholder="Contraseña" required="">
+				</div>
+				<div class="input-contenedor">
+					<i class="fas fa-key icon"></i>
+					<input type="password" name="clave2" minlength="5" maxlength="15" placeholder="Repite contraseña" required="">
+				</div>
+				<input type="submit" value="Regístrate" onClick="comprobarClave()" class="button">
+			</form>
+			<input type="checkbox" required=""> Acepto los <a class="link" href="terminosycondiciones.html">terminos y condiciones de uso</a>
+			<p>¿Ya tienes una cuenta? <a class="link" href="login.html">Iniciar sesión</a></p>
+
+			<!--<p>Al registrarte, aceptas nuestros <a class="link" href="terminosycondiciones.html">terminos y condiciones</a> de uso</p>-->
+			 
+			
+		</div>
+	</form>
+	<footer class="flex footer justify-between bg-gray-800 p-2 fadeInDown">
+        <div class="text-xl bg-gray-800 fot"><a href="terminosycondiciones.html">Terminos y condiciones</a></div>
+        <div class="text-xl bg-gray-800 fot"><a target="_blank" href="https://gmail.com"> brand@contacto.com </a></div>
+    </footer>
+</body>
+</html>
